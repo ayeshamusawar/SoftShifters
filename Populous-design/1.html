@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>.container {
+        margin: 0 auto;
+        width: 300px;
+        height: 300px;
+        border: 1px #000 solid;
+        position: relative;
+      }
+      .box {
+        width: 50px;
+        height: 50px;
+        border: 1px #000 solid;
+        position: absolute;
+        right: 200px;
+        background: red;
+        transition: 0.5s;
+      }
+      </style>
+  </head>
+</head>
+<body>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <section class="container">
+      <div class="box"></div>
+    </section>
+
+    <script type="text/javascript">
+  $(document).ready(function(){
+    $('.box').hover(function() {
+    $(this).box;
+    $(this).css('position','absolute').css('top', Math.random()*200 + 'px').css('left', Math.random()*200 + 'px');
+    });
+    });
+</script> 
+</body>
+</html>
